@@ -1,4 +1,4 @@
-###########DEPENDENCIES################
+
 import time
 import socket
 import math
@@ -13,7 +13,6 @@ import numpy as np
 
 #from imutils.video import WebcamVideoStream
 #import imutils
-#######VARIABLES####################
 ##Aruco
 id_to_find = 72
 marker_size = 16 #cm
@@ -53,7 +52,6 @@ script_mode = 2##1 for arm and takeoff, 2 for manual LOITER to GUIDED land
 ready_to_land=0 ##1 to trigger landing
 
 manualArm=True ##If True, arming from RC controller, If False, arming from this script. 
-#########FUNCTIONS#################
 
 def connectMyCopter():
     parser = argparse.ArgumentParser(description='commands')
@@ -127,7 +125,6 @@ def arm_and_takeoff(targetHeight):
     return None
 
 
-########### fake rangefinder ########
 def send_distance_message(z):
     msg = vehicle.message_factory.distance_sensor_encode(
         0, #time sync system boot !not used
