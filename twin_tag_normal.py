@@ -1,4 +1,4 @@
-###########DEPENDENCIES################
+
 import time
 import socket
 import math
@@ -13,7 +13,6 @@ import numpy as np
 
 #from imutils.video import WebcamVideoStream
 #import imutils
-#######VARIABLES####################
 ##Aruco
 id_to_find = 72
 id_to_find_low_alt = 70  ## New smaller marker ID for lower altitude
@@ -53,7 +52,6 @@ script_mode = 2##1 for arm and takeoff, 2 for manual LOITER to GUIDED land
 ready_to_land=0 ##1 to trigger landing
 
 manualArm=True ##If True, arming from RC controller, If False, arming from this script.
-#########FUNCTIONS#################
 
 def connectMyCopter():
     parser = argparse.ArgumentParser(description='commands')
